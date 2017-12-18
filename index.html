@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The drinks</title>
+    <script src="module.js"></script>
+    <script src="drink_saver_reader.js"></script>
+    <script src="script.js"></script>
+    <script src="addition_saver_reader.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="content_drink">
+        <div id="table_drink">
+            <table id="table1">
+                <tr>
+                    <td>Number of drink</td>
+                    <td>Name of drink</td>
+                    <td>Cost of drink</td>
+                </tr>
+            </table>
+        </div>
+        <div id="table_addition">
+            <table id="table2">
+                <tr>
+                    <td>Number of addition</td>
+                    <td>Name of addition</td>
+                    <td>Cost of addition</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="controls_and_sum">
+        <div id="controls">
+            <span>Drink:</span><input type="text" id="drinkId"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>Additive:</span><input type="text" id="AdditionId"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
+            <button id="calculate">Calculate the cost</button>
+            <button id="addNewDrink">Add new drink</button>
+            <button id="addNewAdd">Add new additive</button>
+        </div>
+        <div id="result">
+            <span>Payment amount:</span><br>
+            <span id="sum"></span>
+        </div>
+    </section>
+
+
+    <div class="modal" id="add_drink">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <p>Add new drink</p>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="new_drink_name"></td>
+                </tr>
+                <tr>
+                    <td>Cost:</td>
+                    <td><input type="text" id="new_drink_cost"></td>
+                </tr>
+            </table>
+            <button class="add_new_item">Add</button>
+            <button class="close_modal">Close</button>
+        </div>
+    </div>
+
+
+    <div class="modal" id="add_addition">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <p>Add new addition</p>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="new_addition_name"></td>
+                </tr>
+                <tr>
+                    <td>Cost:</td>
+                    <td><input type="text" id="new_addition_cost"></td>
+                </tr>
+            </table>
+            <button class="add_new_item">Add</button>
+            <button class="close_modal">Close</button>
+        </div>
+    </div>
+</body>
+</html>

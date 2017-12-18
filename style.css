@@ -1,0 +1,57 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal_content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+}
+#content_drink{
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+#table_drink{
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+#table1 td,#table2 td{
+    border: 1px solid black;
+}
+#controls_and_sum{
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+}
+#controls{
+    width: 60%;
+    float: left;
+}
+#controls button{
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+#result{
+    text-align: center;
+}
+#sum{
+    color:red;
+    font-size: 46pt;
+}
